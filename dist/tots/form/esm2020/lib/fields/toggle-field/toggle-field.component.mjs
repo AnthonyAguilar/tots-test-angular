@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import { TotsBaseFieldComponent } from '../tots-base-field.component';
+import * as i0 from "@angular/core";
+import * as i1 from "@angular/forms";
+import * as i2 from "@angular/material/slide-toggle";
+export class ToggleFieldComponent extends TotsBaseFieldComponent {
+    ngOnInit() {
+        super.ngOnInit();
+        this.matColor = this.field.extra?.matColor || "primary";
+    }
+}
+ToggleFieldComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.0.3", ngImport: i0, type: ToggleFieldComponent, deps: null, target: i0.ɵɵFactoryTarget.Component });
+ToggleFieldComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "15.0.3", type: ToggleFieldComponent, selector: "tots-toggle-field", usesInheritance: true, ngImport: i0, template: "<mat-slide-toggle [color]=\"matColor\" [formControl]=\"input\">{{ field.label }}</mat-slide-toggle>", styles: [""], dependencies: [{ kind: "directive", type: i1.NgControlStatus, selector: "[formControlName],[ngModel],[formControl]" }, { kind: "directive", type: i1.FormControlDirective, selector: "[formControl]", inputs: ["formControl", "disabled", "ngModel"], outputs: ["ngModelChange"], exportAs: ["ngForm"] }, { kind: "component", type: i2.MatSlideToggle, selector: "mat-slide-toggle", inputs: ["disabled", "disableRipple", "color", "tabIndex"], exportAs: ["matSlideToggle"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.0.3", ngImport: i0, type: ToggleFieldComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'tots-toggle-field', template: "<mat-slide-toggle [color]=\"matColor\" [formControl]=\"input\">{{ field.label }}</mat-slide-toggle>" }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG9nZ2xlLWZpZWxkLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RvdHMvZm9ybS9zcmMvbGliL2ZpZWxkcy90b2dnbGUtZmllbGQvdG9nZ2xlLWZpZWxkLmNvbXBvbmVudC50cyIsIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RvdHMvZm9ybS9zcmMvbGliL2ZpZWxkcy90b2dnbGUtZmllbGQvdG9nZ2xlLWZpZWxkLmNvbXBvbmVudC5odG1sIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxTQUFTLEVBQVUsTUFBTSxlQUFlLENBQUM7QUFFbEQsT0FBTyxFQUFFLHNCQUFzQixFQUFFLE1BQU0sOEJBQThCLENBQUM7Ozs7QUFPdEUsTUFBTSxPQUFPLG9CQUFxQixTQUFRLHNCQUFzQjtJQUlyRCxRQUFRO1FBQ2YsS0FBSyxDQUFDLFFBQVEsRUFBRSxDQUFDO1FBQ2pCLElBQUksQ0FBQyxRQUFRLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxLQUFLLEVBQUUsUUFBUSxJQUFJLFNBQVMsQ0FBQztJQUMxRCxDQUFDOztpSEFQVSxvQkFBb0I7cUdBQXBCLG9CQUFvQixnRkNUakMscUdBQStGOzJGRFNsRixvQkFBb0I7a0JBTGhDLFNBQVM7K0JBQ0UsbUJBQW1CIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50LCBPbkluaXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgVGhlbWVQYWxldHRlIH0gZnJvbSAnQGFuZ3VsYXIvbWF0ZXJpYWwvY29yZSc7XHJcbmltcG9ydCB7IFRvdHNCYXNlRmllbGRDb21wb25lbnQgfSBmcm9tICcuLi90b3RzLWJhc2UtZmllbGQuY29tcG9uZW50JztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gIHNlbGVjdG9yOiAndG90cy10b2dnbGUtZmllbGQnLFxyXG4gIHRlbXBsYXRlVXJsOiAnLi90b2dnbGUtZmllbGQuY29tcG9uZW50Lmh0bWwnLFxyXG4gIHN0eWxlVXJsczogWycuL3RvZ2dsZS1maWVsZC5jb21wb25lbnQuc2NzcyddXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBUb2dnbGVGaWVsZENvbXBvbmVudCBleHRlbmRzIFRvdHNCYXNlRmllbGRDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xyXG5cclxuICBtYXRDb2xvciA6IFRoZW1lUGFsZXR0ZVxyXG5cclxuICBvdmVycmlkZSBuZ09uSW5pdCgpOiB2b2lkIHtcclxuICAgIHN1cGVyLm5nT25Jbml0KCk7XHJcbiAgICB0aGlzLm1hdENvbG9yID0gdGhpcy5maWVsZC5leHRyYT8ubWF0Q29sb3IgfHwgXCJwcmltYXJ5XCI7XHJcbiAgfVxyXG59XHJcbiIsIjxtYXQtc2xpZGUtdG9nZ2xlIFtjb2xvcl09XCJtYXRDb2xvclwiIFtmb3JtQ29udHJvbF09XCJpbnB1dFwiPnt7IGZpZWxkLmxhYmVsIH19PC9tYXQtc2xpZGUtdG9nZ2xlPiJdfQ==

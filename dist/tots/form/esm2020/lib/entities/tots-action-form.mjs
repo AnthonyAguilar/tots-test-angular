@@ -1,0 +1,6 @@
+export class TotsActionForm {
+    constructor() {
+        this.key = '';
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG90cy1hY3Rpb24tZm9ybS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RvdHMvZm9ybS9zcmMvbGliL2VudGl0aWVzL3RvdHMtYWN0aW9uLWZvcm0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxPQUFPLGNBQWM7SUFBM0I7UUFDSSxRQUFHLEdBQVcsRUFBRSxDQUFDO0lBRXJCLENBQUM7Q0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBUb3RzQWN0aW9uRm9ybSB7XHJcbiAgICBrZXk6IHN0cmluZyA9ICcnO1xyXG4gICAgaXRlbTogYW55O1xyXG59Il19

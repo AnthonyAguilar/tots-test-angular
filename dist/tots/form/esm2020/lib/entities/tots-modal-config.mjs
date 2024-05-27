@@ -1,0 +1,8 @@
+export class TotsModalConfig {
+    constructor() {
+        this.title = '';
+        this.fields = [];
+        this.autoSave = false;
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG90cy1tb2RhbC1jb25maWcuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy90b3RzL2Zvcm0vc3JjL2xpYi9lbnRpdGllcy90b3RzLW1vZGFsLWNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxNQUFNLE9BQU8sZUFBZTtJQUE1QjtRQUNJLFVBQUssR0FBVyxFQUFFLENBQUM7UUFDbkIsV0FBTSxHQUF5QixFQUFFLENBQUM7UUFFbEMsYUFBUSxHQUFhLEtBQUssQ0FBQztJQUMvQixDQUFDO0NBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBUb3RzRmllbGRGb3JtIH0gZnJvbSBcIi4vdG90cy1maWVsZC1mb3JtXCI7XHJcblxyXG5leHBvcnQgY2xhc3MgVG90c01vZGFsQ29uZmlnIHtcclxuICAgIHRpdGxlOiBzdHJpbmcgPSAnJztcclxuICAgIGZpZWxkczogQXJyYXk8VG90c0ZpZWxkRm9ybT4gPSBbXTtcclxuICAgIGl0ZW06IGFueTtcclxuICAgIGF1dG9TYXZlPzogYm9vbGVhbiA9IGZhbHNlO1xyXG59Il19

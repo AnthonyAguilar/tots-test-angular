@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+import { TotsBaseColumnComponent } from '../tots-base-column.component';
+import * as i0 from "@angular/core";
+import * as i1 from "@angular/material/checkbox";
+export class CheckboxColumnComponent extends TotsBaseColumnComponent {
+    onChange(event) {
+        let key = 'select-item';
+        if (!event.checked) {
+            key = 'unselect-item';
+        }
+        this.onAction.next({ key: key, item: this.item });
+    }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.2.11", ngImport: i0, type: CheckboxColumnComponent, deps: null, target: i0.ɵɵFactoryTarget.Component }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.2.11", type: CheckboxColumnComponent, selector: "tots-checkbox-column", usesInheritance: true, ngImport: i0, template: "<div class=\"tots-checkbox-column\">\r\n    <mat-checkbox [class]=\"this.column.extra?.class\" [color]=\"this.column.extra?.color\" (change)=\"onChange($event)\" (click)=\"$event.stopPropagation();\"></mat-checkbox>\r\n</div>", styles: [""], dependencies: [{ kind: "component", type: i1.MatCheckbox, selector: "mat-checkbox", inputs: ["disableRipple", "color", "tabIndex"], exportAs: ["matCheckbox"] }] }); }
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "16.2.11", ngImport: i0, type: CheckboxColumnComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'tots-checkbox-column', template: "<div class=\"tots-checkbox-column\">\r\n    <mat-checkbox [class]=\"this.column.extra?.class\" [color]=\"this.column.extra?.color\" (change)=\"onChange($event)\" (click)=\"$event.stopPropagation();\"></mat-checkbox>\r\n</div>" }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2hlY2tib3gtY29sdW1uLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RvdHMvdGFibGUvc3JjL2xpYi9jb2x1bW5zL2NoZWNrYm94LWNvbHVtbi9jaGVja2JveC1jb2x1bW4uY29tcG9uZW50LnRzIiwiLi4vLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdG90cy90YWJsZS9zcmMvbGliL2NvbHVtbnMvY2hlY2tib3gtY29sdW1uL2NoZWNrYm94LWNvbHVtbi5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzFDLE9BQU8sRUFBRSx1QkFBdUIsRUFBRSxNQUFNLCtCQUErQixDQUFDOzs7QUFReEUsTUFBTSxPQUFPLHVCQUF3QixTQUFRLHVCQUF1QjtJQUVsRSxRQUFRLENBQUMsS0FBd0I7UUFDL0IsSUFBSSxHQUFHLEdBQUcsYUFBYSxDQUFDO1FBQ3hCLElBQUcsQ0FBQyxLQUFLLENBQUMsT0FBTyxFQUFDO1lBQ2hCLEdBQUcsR0FBRyxlQUFlLENBQUM7U0FDdkI7UUFDRCxJQUFJLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxFQUFFLEdBQUcsRUFBRSxHQUFHLEVBQUUsSUFBSSxFQUFFLElBQUksQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO0lBQ3BELENBQUM7K0dBUlUsdUJBQXVCO21HQUF2Qix1QkFBdUIsbUZDVHBDLG1PQUVNOzs0RkRPTyx1QkFBdUI7a0JBTG5DLFNBQVM7K0JBQ0Usc0JBQXNCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50IH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IFRvdHNCYXNlQ29sdW1uQ29tcG9uZW50IH0gZnJvbSAnLi4vdG90cy1iYXNlLWNvbHVtbi5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBNYXRDaGVja2JveENoYW5nZSB9IGZyb20gJ0Bhbmd1bGFyL21hdGVyaWFsL2NoZWNrYm94JztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gIHNlbGVjdG9yOiAndG90cy1jaGVja2JveC1jb2x1bW4nLFxyXG4gIHRlbXBsYXRlVXJsOiAnLi9jaGVja2JveC1jb2x1bW4uY29tcG9uZW50Lmh0bWwnLFxyXG4gIHN0eWxlVXJsczogWycuL2NoZWNrYm94LWNvbHVtbi5jb21wb25lbnQuY3NzJ11cclxufSlcclxuZXhwb3J0IGNsYXNzIENoZWNrYm94Q29sdW1uQ29tcG9uZW50IGV4dGVuZHMgVG90c0Jhc2VDb2x1bW5Db21wb25lbnQge1xyXG5cclxuICBvbkNoYW5nZShldmVudDogTWF0Q2hlY2tib3hDaGFuZ2UpIHtcclxuICAgIGxldCBrZXkgPSAnc2VsZWN0LWl0ZW0nO1xyXG4gICAgaWYoIWV2ZW50LmNoZWNrZWQpe1xyXG4gICAgICBrZXkgPSAndW5zZWxlY3QtaXRlbSc7XHJcbiAgICB9XHJcbiAgICB0aGlzLm9uQWN0aW9uLm5leHQoeyBrZXk6IGtleSwgaXRlbTogdGhpcy5pdGVtIH0pO1xyXG4gIH1cclxufVxyXG4iLCI8ZGl2IGNsYXNzPVwidG90cy1jaGVja2JveC1jb2x1bW5cIj5cclxuICAgIDxtYXQtY2hlY2tib3ggW2NsYXNzXT1cInRoaXMuY29sdW1uLmV4dHJhPy5jbGFzc1wiIFtjb2xvcl09XCJ0aGlzLmNvbHVtbi5leHRyYT8uY29sb3JcIiAoY2hhbmdlKT1cIm9uQ2hhbmdlKCRldmVudClcIiAoY2xpY2spPVwiJGV2ZW50LnN0b3BQcm9wYWdhdGlvbigpO1wiPjwvbWF0LWNoZWNrYm94PlxyXG48L2Rpdj4iXX0=

@@ -1,0 +1,8 @@
+export class TotsFieldForm {
+    constructor() {
+        this.key = '';
+        this.label = '';
+        this.validators = [];
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG90cy1maWVsZC1mb3JtLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdG90cy9mb3JtL3NyYy9saWIvZW50aXRpZXMvdG90cy1maWVsZC1mb3JtLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBLE1BQU0sT0FBTyxhQUFhO0lBQTFCO1FBRUksUUFBRyxHQUF5QixFQUFFLENBQUM7UUFDL0IsVUFBSyxHQUFZLEVBQUUsQ0FBQztRQUNwQixlQUFVLEdBQW1CLEVBQUUsQ0FBQztJQUdwQyxDQUFDO0NBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBWYWxpZGF0b3JGbiB9IGZyb20gXCJAYW5ndWxhci9mb3Jtc1wiO1xyXG5cclxuZXhwb3J0IGNsYXNzIFRvdHNGaWVsZEZvcm0ge1xyXG4gICAgY29tcG9uZW50OiBhbnk7XHJcbiAgICBrZXk6IHN0cmluZ3xBcnJheTxzdHJpbmc+ID0gJyc7XHJcbiAgICBsYWJlbD86IHN0cmluZyA9ICcnO1xyXG4gICAgdmFsaWRhdG9ycz86IFZhbGlkYXRvckZuW10gPSBbXTtcclxuICAgIGV4dHJhPzogYW55O1xyXG4gICAgZXJyb3JzPzogQXJyYXk8eyBuYW1lOiBzdHJpbmcsIG1lc3NhZ2U6IHN0cmluZyB9PlxyXG59XHJcbiJdfQ==

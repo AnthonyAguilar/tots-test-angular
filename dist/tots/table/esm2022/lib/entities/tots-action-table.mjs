@@ -1,0 +1,6 @@
+export class TotsActionTable {
+    constructor() {
+        this.key = '';
+    }
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidG90cy1hY3Rpb24tdGFibGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9wcm9qZWN0cy90b3RzL3RhYmxlL3NyYy9saWIvZW50aXRpZXMvdG90cy1hY3Rpb24tdGFibGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxPQUFPLGVBQWU7SUFBNUI7UUFDSSxRQUFHLEdBQVcsRUFBRSxDQUFDO0lBRXJCLENBQUM7Q0FBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBUb3RzQWN0aW9uVGFibGUge1xyXG4gICAga2V5OiBzdHJpbmcgPSAnJztcclxuICAgIGl0ZW0/OiBhbnk7XHJcbn0iXX0=

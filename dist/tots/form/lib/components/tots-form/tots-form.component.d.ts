@@ -1,0 +1,32 @@
+import { AfterViewInit, ChangeDetectorRef, EventEmitter, OnInit } from '@angular/core';
+import { UntypedFormGroup } from '@angular/forms';
+import { Subject } from 'rxjs';
+import { TotsActionForm } from '../../entities/tots-action-form';
+import { TotsFieldForm } from '../../entities/tots-field-form';
+import * as i0 from "@angular/core";
+export declare class TotsFormComponent implements OnInit, AfterViewInit {
+    protected changeDetector: ChangeDetectorRef;
+    fields: Array<TotsFieldForm>;
+    item: any;
+    autoSave: boolean;
+    onAction: EventEmitter<TotsActionForm>;
+    privateActions: Subject<TotsActionForm>;
+    group: UntypedFormGroup;
+    constructor(changeDetector: ChangeDetectorRef);
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    updateFormByItem(): void;
+    updateItemByForm(): any;
+    getItemByForm(): any;
+    loadConfig(): void;
+    activateAutoSave(): void;
+    emitInit(): void;
+    isHasIcon(field: TotsFieldForm): boolean;
+    getIconField(field: TotsFieldForm): any;
+    hasError(field: TotsFieldForm): boolean;
+    getErrors(field: TotsFieldForm): Array<string>;
+    getFormGroup(): UntypedFormGroup;
+    setItem(item: any): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<TotsFormComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TotsFormComponent, "tots-form", never, { "fields": "fields"; "item": "item"; "autoSave": "autoSave"; }, { "onAction": "onAction"; }, never, never, false, never>;
+}

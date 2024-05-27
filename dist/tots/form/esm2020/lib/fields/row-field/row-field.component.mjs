@@ -1,0 +1,38 @@
+import { Component } from '@angular/core';
+import { TotsBaseFieldComponent } from '../tots-base-field.component';
+import * as i0 from "@angular/core";
+import * as i1 from "@angular/common";
+import * as i2 from "@angular/material/icon";
+import * as i3 from "../base-print-field/base-print-field.component";
+export class RowFieldComponent extends TotsBaseFieldComponent {
+    ngOnInit() { }
+    isHasIcon(field) {
+        if (field.extra && field.extra.icon) {
+            return true;
+        }
+        return false;
+    }
+    getIconField(field) {
+        if (field.extra && field.extra.icon) {
+            return field.extra.icon;
+        }
+        return '';
+    }
+    static updateFormByItem(group, item, field) {
+        for (const subfield of field.extra.fields) {
+            subfield.component.updateFormByItem(group, item, subfield);
+        }
+    }
+    static updateItemByForm(group, item, field) {
+        for (const subfield of field.extra.fields) {
+            subfield.component.updateItemByForm(group, item, subfield);
+        }
+    }
+}
+RowFieldComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "15.0.3", ngImport: i0, type: RowFieldComponent, deps: null, target: i0.ɵɵFactoryTarget.Component });
+RowFieldComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "15.0.3", type: RowFieldComponent, selector: "tots-row-field", usesInheritance: true, ngImport: i0, template: "<div class=\"tots-row-field\">\r\n    <div *ngFor=\"let f of field.extra.fields\" class=\"tots-field-main-container {{ f.extra?.classes ?? '' }}\">\r\n        <mat-icon *ngIf=\"isHasIcon(f)\">{{getIconField(f)}}</mat-icon>\r\n        <div class=\"tots-field-print-container\"><tots-base-print-field [field]=\"f\" [group]=\"group\" [onAction]=\"onAction\"></tots-base-print-field></div>\r\n    </div>\r\n</div>\r\n", styles: [".tots-row-field{display:flex}.tots-field-main-container{display:flex;width:100%;margin-left:24px}.tots-field-main-container tots-base-print-field{width:1px;display:none}.tots-field-main-container mat-icon{width:24px;margin-top:14px;margin-right:20px}.tots-field-main-container .tots-field-print-container{width:100%}.tots-field-main-container:first-child{margin-left:0}\n"], dependencies: [{ kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "component", type: i2.MatIcon, selector: "mat-icon", inputs: ["color", "inline", "svgIcon", "fontSet", "fontIcon"], exportAs: ["matIcon"] }, { kind: "component", type: i3.BasePrintFieldComponent, selector: "tots-base-print-field", inputs: ["field", "group", "onAction"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "15.0.3", ngImport: i0, type: RowFieldComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'tots-row-field', template: "<div class=\"tots-row-field\">\r\n    <div *ngFor=\"let f of field.extra.fields\" class=\"tots-field-main-container {{ f.extra?.classes ?? '' }}\">\r\n        <mat-icon *ngIf=\"isHasIcon(f)\">{{getIconField(f)}}</mat-icon>\r\n        <div class=\"tots-field-print-container\"><tots-base-print-field [field]=\"f\" [group]=\"group\" [onAction]=\"onAction\"></tots-base-print-field></div>\r\n    </div>\r\n</div>\r\n", styles: [".tots-row-field{display:flex}.tots-field-main-container{display:flex;width:100%;margin-left:24px}.tots-field-main-container tots-base-print-field{width:1px;display:none}.tots-field-main-container mat-icon{width:24px;margin-top:14px;margin-right:20px}.tots-field-main-container .tots-field-print-container{width:100%}.tots-field-main-container:first-child{margin-left:0}\n"] }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicm93LWZpZWxkLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RvdHMvZm9ybS9zcmMvbGliL2ZpZWxkcy9yb3ctZmllbGQvcm93LWZpZWxkLmNvbXBvbmVudC50cyIsIi4uLy4uLy4uLy4uLy4uLy4uLy4uL3Byb2plY3RzL3RvdHMvZm9ybS9zcmMvbGliL2ZpZWxkcy9yb3ctZmllbGQvcm93LWZpZWxkLmNvbXBvbmVudC5odG1sIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxTQUFTLEVBQVUsTUFBTSxlQUFlLENBQUM7QUFHbEQsT0FBTyxFQUFFLHNCQUFzQixFQUFFLE1BQU0sOEJBQThCLENBQUM7Ozs7O0FBT3RFLE1BQU0sT0FBTyxpQkFBa0IsU0FBUSxzQkFBc0I7SUFFbEQsUUFBUSxLQUFVLENBQUM7SUFFNUIsU0FBUyxDQUFDLEtBQW9CO1FBQzVCLElBQUcsS0FBSyxDQUFDLEtBQUssSUFBSSxLQUFLLENBQUMsS0FBSyxDQUFDLElBQUksRUFBQztZQUFFLE9BQU8sSUFBSSxDQUFDO1NBQUU7UUFDbkQsT0FBTyxLQUFLLENBQUM7SUFDZixDQUFDO0lBRUQsWUFBWSxDQUFDLEtBQW9CO1FBQy9CLElBQUcsS0FBSyxDQUFDLEtBQUssSUFBSSxLQUFLLENBQUMsS0FBSyxDQUFDLElBQUksRUFBQztZQUFFLE9BQU8sS0FBSyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUM7U0FBRTtRQUMvRCxPQUFPLEVBQUUsQ0FBQztJQUNaLENBQUM7SUFFRCxNQUFNLENBQVUsZ0JBQWdCLENBQUMsS0FBdUIsRUFBRSxJQUFTLEVBQUUsS0FBb0I7UUFDdkYsS0FBSyxNQUFNLFFBQVEsSUFBSSxLQUFLLENBQUMsS0FBSyxDQUFDLE1BQU0sRUFBRTtZQUN6QyxRQUFRLENBQUMsU0FBUyxDQUFDLGdCQUFnQixDQUFDLEtBQUssRUFBRSxJQUFJLEVBQUUsUUFBUSxDQUFDLENBQUM7U0FDNUQ7SUFDSCxDQUFDO0lBRUQsTUFBTSxDQUFVLGdCQUFnQixDQUFDLEtBQXVCLEVBQUUsSUFBUyxFQUFFLEtBQW9CO1FBQ3ZGLEtBQUssTUFBTSxRQUFRLElBQUksS0FBSyxDQUFDLEtBQUssQ0FBQyxNQUFNLEVBQUU7WUFDekMsUUFBUSxDQUFDLFNBQVMsQ0FBQyxnQkFBZ0IsQ0FBQyxLQUFLLEVBQUUsSUFBSSxFQUFFLFFBQVEsQ0FBQyxDQUFDO1NBQzVEO0lBQ0gsQ0FBQzs7OEdBeEJVLGlCQUFpQjtrR0FBakIsaUJBQWlCLDZFQ1Y5QiwrWkFNQTsyRkRJYSxpQkFBaUI7a0JBTDdCLFNBQVM7K0JBQ0UsZ0JBQWdCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50LCBPbkluaXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgVW50eXBlZEZvcm1Hcm91cCB9IGZyb20gJ0Bhbmd1bGFyL2Zvcm1zJztcclxuaW1wb3J0IHsgVG90c0ZpZWxkRm9ybSB9IGZyb20gJy4uLy4uL2VudGl0aWVzL3RvdHMtZmllbGQtZm9ybSc7XHJcbmltcG9ydCB7IFRvdHNCYXNlRmllbGRDb21wb25lbnQgfSBmcm9tICcuLi90b3RzLWJhc2UtZmllbGQuY29tcG9uZW50JztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gIHNlbGVjdG9yOiAndG90cy1yb3ctZmllbGQnLFxyXG4gIHRlbXBsYXRlVXJsOiAnLi9yb3ctZmllbGQuY29tcG9uZW50Lmh0bWwnLFxyXG4gIHN0eWxlVXJsczogWycuL3Jvdy1maWVsZC5jb21wb25lbnQuc2NzcyddXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBSb3dGaWVsZENvbXBvbmVudCBleHRlbmRzIFRvdHNCYXNlRmllbGRDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xyXG5cclxuICBvdmVycmlkZSBuZ09uSW5pdCgpOiB2b2lkIHt9XHJcblxyXG4gIGlzSGFzSWNvbihmaWVsZDogVG90c0ZpZWxkRm9ybSkge1xyXG4gICAgaWYoZmllbGQuZXh0cmEgJiYgZmllbGQuZXh0cmEuaWNvbil7IHJldHVybiB0cnVlOyB9XHJcbiAgICByZXR1cm4gZmFsc2U7XHJcbiAgfVxyXG5cclxuICBnZXRJY29uRmllbGQoZmllbGQ6IFRvdHNGaWVsZEZvcm0pIHtcclxuICAgIGlmKGZpZWxkLmV4dHJhICYmIGZpZWxkLmV4dHJhLmljb24peyByZXR1cm4gZmllbGQuZXh0cmEuaWNvbjsgfVxyXG4gICAgcmV0dXJuICcnO1xyXG4gIH1cclxuXHJcbiAgc3RhdGljIG92ZXJyaWRlIHVwZGF0ZUZvcm1CeUl0ZW0oZ3JvdXA6IFVudHlwZWRGb3JtR3JvdXAsIGl0ZW06IGFueSwgZmllbGQ6IFRvdHNGaWVsZEZvcm0pIHtcclxuICAgIGZvciAoY29uc3Qgc3ViZmllbGQgb2YgZmllbGQuZXh0cmEuZmllbGRzKSB7XHJcbiAgICAgIHN1YmZpZWxkLmNvbXBvbmVudC51cGRhdGVGb3JtQnlJdGVtKGdyb3VwLCBpdGVtLCBzdWJmaWVsZCk7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICBzdGF0aWMgb3ZlcnJpZGUgdXBkYXRlSXRlbUJ5Rm9ybShncm91cDogVW50eXBlZEZvcm1Hcm91cCwgaXRlbTogYW55LCBmaWVsZDogVG90c0ZpZWxkRm9ybSkge1xyXG4gICAgZm9yIChjb25zdCBzdWJmaWVsZCBvZiBmaWVsZC5leHRyYS5maWVsZHMpIHtcclxuICAgICAgc3ViZmllbGQuY29tcG9uZW50LnVwZGF0ZUl0ZW1CeUZvcm0oZ3JvdXAsIGl0ZW0sIHN1YmZpZWxkKTtcclxuICAgIH1cclxuICB9XHJcbn1cclxuIiwiPGRpdiBjbGFzcz1cInRvdHMtcm93LWZpZWxkXCI+XHJcbiAgICA8ZGl2ICpuZ0Zvcj1cImxldCBmIG9mIGZpZWxkLmV4dHJhLmZpZWxkc1wiIGNsYXNzPVwidG90cy1maWVsZC1tYWluLWNvbnRhaW5lciB7eyBmLmV4dHJhPy5jbGFzc2VzID8/ICcnIH19XCI+XHJcbiAgICAgICAgPG1hdC1pY29uICpuZ0lmPVwiaXNIYXNJY29uKGYpXCI+e3tnZXRJY29uRmllbGQoZil9fTwvbWF0LWljb24+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cInRvdHMtZmllbGQtcHJpbnQtY29udGFpbmVyXCI+PHRvdHMtYmFzZS1wcmludC1maWVsZCBbZmllbGRdPVwiZlwiIFtncm91cF09XCJncm91cFwiIFtvbkFjdGlvbl09XCJvbkFjdGlvblwiPjwvdG90cy1iYXNlLXByaW50LWZpZWxkPjwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbjwvZGl2PlxyXG4iXX0=

@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { TotsTableHelper } from '../../helpers/tots-table-helper';
+import { TotsBaseColumnComponent } from '../tots-base-column.component';
+import * as i0 from "@angular/core";
+export class TwoStringColumnComponent extends TotsBaseColumnComponent {
+    getSubtitleValue() {
+        return TotsTableHelper.getItemValueByKey(this.item, this.column.extra.field_subtitle_key);
+    }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.2.11", ngImport: i0, type: TwoStringColumnComponent, deps: null, target: i0.ɵɵFactoryTarget.Component }); }
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.2.11", type: TwoStringColumnComponent, selector: "tots-two-string-column", usesInheritance: true, ngImport: i0, template: "<div class=\"first-line\"><strong>{{getItemValue()}}</strong></div>\r\n<div class=\"second-line\">{{getSubtitleValue()}}</div>", styles: [""] }); }
+}
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "16.2.11", ngImport: i0, type: TwoStringColumnComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'tots-two-string-column', template: "<div class=\"first-line\"><strong>{{getItemValue()}}</strong></div>\r\n<div class=\"second-line\">{{getSubtitleValue()}}</div>" }]
+        }] });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHdvLXN0cmluZy1jb2x1bW4uY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdG90cy90YWJsZS9zcmMvbGliL2NvbHVtbnMvdHdvLXN0cmluZy1jb2x1bW4vdHdvLXN0cmluZy1jb2x1bW4uY29tcG9uZW50LnRzIiwiLi4vLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvdG90cy90YWJsZS9zcmMvbGliL2NvbHVtbnMvdHdvLXN0cmluZy1jb2x1bW4vdHdvLXN0cmluZy1jb2x1bW4uY29tcG9uZW50Lmh0bWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUMxQyxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0saUNBQWlDLENBQUM7QUFDbEUsT0FBTyxFQUFFLHVCQUF1QixFQUFFLE1BQU0sK0JBQStCLENBQUM7O0FBT3hFLE1BQU0sT0FBTyx3QkFBeUIsU0FBUSx1QkFBdUI7SUFFbkUsZ0JBQWdCO1FBQ2QsT0FBTyxlQUFlLENBQUMsaUJBQWlCLENBQUMsSUFBSSxDQUFDLElBQUksRUFBRSxJQUFJLENBQUMsTUFBTSxDQUFDLEtBQUssQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDO0lBQzVGLENBQUM7K0dBSlUsd0JBQXdCO21HQUF4Qix3QkFBd0IscUZDVHJDLGdJQUNxRDs7NEZEUXhDLHdCQUF3QjtrQkFMcEMsU0FBUzsrQkFDRSx3QkFBd0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgVG90c1RhYmxlSGVscGVyIH0gZnJvbSAnLi4vLi4vaGVscGVycy90b3RzLXRhYmxlLWhlbHBlcic7XHJcbmltcG9ydCB7IFRvdHNCYXNlQ29sdW1uQ29tcG9uZW50IH0gZnJvbSAnLi4vdG90cy1iYXNlLWNvbHVtbi5jb21wb25lbnQnO1xyXG5cclxuQENvbXBvbmVudCh7XHJcbiAgc2VsZWN0b3I6ICd0b3RzLXR3by1zdHJpbmctY29sdW1uJyxcclxuICB0ZW1wbGF0ZVVybDogJy4vdHdvLXN0cmluZy1jb2x1bW4uY29tcG9uZW50Lmh0bWwnLFxyXG4gIHN0eWxlVXJsczogWycuL3R3by1zdHJpbmctY29sdW1uLmNvbXBvbmVudC5jc3MnXVxyXG59KVxyXG5leHBvcnQgY2xhc3MgVHdvU3RyaW5nQ29sdW1uQ29tcG9uZW50IGV4dGVuZHMgVG90c0Jhc2VDb2x1bW5Db21wb25lbnQge1xyXG5cclxuICBnZXRTdWJ0aXRsZVZhbHVlKCk6IGFueSB7XHJcbiAgICByZXR1cm4gVG90c1RhYmxlSGVscGVyLmdldEl0ZW1WYWx1ZUJ5S2V5KHRoaXMuaXRlbSwgdGhpcy5jb2x1bW4uZXh0cmEuZmllbGRfc3VidGl0bGVfa2V5KTtcclxuICB9XHJcbn1cclxuIiwiPGRpdiBjbGFzcz1cImZpcnN0LWxpbmVcIj48c3Ryb25nPnt7Z2V0SXRlbVZhbHVlKCl9fTwvc3Ryb25nPjwvZGl2PlxyXG48ZGl2IGNsYXNzPVwic2Vjb25kLWxpbmVcIj57e2dldFN1YnRpdGxlVmFsdWUoKX19PC9kaXY+Il19
