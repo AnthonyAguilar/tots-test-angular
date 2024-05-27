@@ -1,24 +1,21 @@
 import { Component, ViewChild } from '@angular/core';
-import { FormGroup, Validators } from '@angular/forms';
+import { Validators } from '@angular/forms';
 import { PageEvent } from '@angular/material/paginator';
 import { TotsListResponse } from '@tots/core';
-import { TotsTableFullGroupComponent } from '@tots/editable-columns';
-import { TotsModalConfig } from '@tots/form/src/lib/entities/tots-modal-config';
-import { StringFieldComponent } from '@tots/form/src/lib/fields/string-field/string-field.component';
-import { SubmitButtonFieldComponent } from '@tots/form/src/lib/fields/submit-button-field/submit-button-field.component';
-import { TotsFormModalService } from '@tots/form/src/lib/services/tots-form-modal.service';
+import {
+  StringFieldComponent,
+  SubmitAndCancelButtonsFieldComponent,
+  SubmitButtonFieldComponent,
+  TotsFormModalService,
+  TotsModalConfig,
+} from '@tots/form';
 import {
   MoreMenuColumnComponent,
   StringColumnComponent,
   TotsActionTable,
   TotsTableComponent,
   TotsTableConfig,
-  TwoStringColumnComponent,
 } from '@tots/table';
-import {
-  BasePrintFieldComponent,
-  SubmitAndCancelButtonsFieldComponent,
-} from '@tots/form/src/public-api';
 import { delay, of, tap } from 'rxjs';
 import { Client } from 'src/app/entities/client';
 import {
@@ -29,13 +26,12 @@ import {
 import { ClientService } from 'src/app/services/client.service';
 
 @Component({
-  selector: 'app-customer-table',
-  templateUrl: './customer-table.component.html',
-  styleUrls: ['./customer-table.component.scss'],
+  selector: 'app-clients-table',
+  templateUrl: './clients-table.component.html',
+  styleUrls: ['./clients-table.component.scss'],
 })
-export class CustomerTableComponent {
+export class ClientsTableComponent {
   @ViewChild('tableComp') tableComp!: TotsTableComponent;
-  @ViewChild('tableCompGroup') tableCompGroup!: TotsTableFullGroupComponent;
 
   items: Client[] = [];
   config = new TotsTableConfig();
@@ -59,7 +55,6 @@ export class CustomerTableComponent {
         this.items = resp.response.data;
         this.config.obs = of(resp.response);
         this.tableComp.loadItems();
-        console.log(resp);
       },
       error: (error) => {
         console.log(error);
@@ -160,7 +155,6 @@ export class CustomerTableComponent {
       .pipe(delay(1000))
       .pipe(tap((action) => action.modal?.componentInstance?.hideLoading()))
       .subscribe((action) => {
-        console.log(action);
         if (action.item) {
           action.modal?.close();
         }
@@ -195,7 +189,6 @@ export class CustomerTableComponent {
       )
       .pipe(delay(1000))
       .subscribe((action) => {
-        console.log(action);
         if (['continue', 'cancel'].includes(action.key)) {
           action.key == 'cancel' || this.removeItem(id);
           action.modal?.componentInstance?.hideLoading();

@@ -1,12 +1,13 @@
-import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
+import { Client } from '../entities/client';
+import { HttpClient } from '@angular/common/http';
 import {
   TOTS_CORE_PROVIDER,
   TotsBaseHttpService,
-  TotsCoreConfig
+  TotsCoreConfig,
+  TotsListResponse,
 } from '@tots/core';
 import { Observable } from 'rxjs';
-import { Client } from '../entities/client';
 import {
   ClientListResponse,
   ClientRemoveResponse,
