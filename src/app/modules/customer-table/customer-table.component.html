@@ -1,0 +1,18 @@
+<div class="container">
+  <button
+    class="btn-modal"
+    mat-raised-button
+    aria-label="Nuevo Cliente"
+    (click)="onOpenModalClient(null)"
+  >
+    Nuevo Cliente<mat-icon>add</mat-icon>
+  </button>
+
+  <tots-table
+    #tableComp
+    [config]="config"
+    (onAction)="onTableAction($event)"
+    [pageIndex]="1"
+    [pageSize]="20"
+  ></tots-table>
+</div>
